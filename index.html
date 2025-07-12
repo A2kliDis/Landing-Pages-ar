@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ماركتو - منصة تسويق ذكية تساعدك على زيادة مبيعاتك والوصول لعملائك بسهولة. جرب الآن مجانًا!">
+  <title>ماركتو | منصة التسويق الذكية</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #f8fafc; }
+    .hero { background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0 2px 8px #eee; padding: 60px 0; }
+    .feature-icon { font-size: 2.5rem; color: #4f46e5; }
+    .step-icon { font-size: 2rem; color: #16a34a; }
+    .faq-question { cursor: pointer; }
+    .clients img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      background: transparent;
+      padding: 2px;
+      margin: 0 10px;
+      border-radius: 8px;
+      box-shadow: none;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .testimonial-img { width: 48px; height: 48px; object-fit: cover; border-radius: 50%; margin-left: 10px; }
+    footer { background: #222; color: #fff; padding: 30px 0; border-radius: 16px 16px 0 0; margin-top: 40px; }
+    .navbar { border-radius: 0 0 16px 16px; box-shadow: 0 2px 8px #eee; }
+    .btn-primary:hover, .btn-success:hover {
+      box-shadow: 0 4px 16px #4f46e533;
+      opacity: 0.95;
+      transform: translateY(-2px) scale(1.03);
+      transition: all 0.2s;
+    }
+    #successMsg {
+      font-weight: bold;
+      font-size: 1.1rem;
+      border: 2px solid #16a34a;
+      background: #e6f9ed;
+      color: #166534;
+    }
+    body, h1, h2, h3, h4, h5, h6, .btn, .navbar, input, textarea {
+      font-family: 'Tajawal', Arial, Helvetica, sans-serif !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white mb-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">ماركتو</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل القائمة">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">المميزات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how">كيف تعمل</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">آراء العملاء</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">الأسئلة</a></li>
+        </ul>
+        <a class="btn btn-primary ms-lg-3 mt-2 mt-lg-0" href="#contact">جرب الآن</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <div class="container">
+    <div class="hero row align-items-center mb-5">
+      <div class="col-lg-6 text-center text-lg-end mb-4 mb-lg-0">
+        <h1 class="mb-3">ضاعف مبيعاتك مع <span class="text-primary">ماركتو</span></h1>
+        <p class="mb-4">منصة تسويق ذكية تساعدك على الوصول لعملائك وزيادة أرباحك بسهولة واحترافية.</p>
+        <a href="#contact" class="btn btn-primary btn-lg">ابدأ تجربتك المجانية</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="لوحة تحكم تسويقية" class="img-fluid rounded shadow" loading="lazy">
+      </div>
+    </div>
+    <!-- Clients Logos -->
+    <div class="clients d-flex justify-content-center align-items-center flex-wrap mb-5">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" loading="lazy">
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" style="max-height:50px;" loading="lazy">
+      <img src="https://img.icons8.com/office/40/000000/netflix.png" alt="Netflix N" style="max-height:50px;" loading="lazy">
+    </div>
+    <!-- Features Section -->
+    <div id="features" class="my-5">
+      <h2 class="text-center mb-4">ماذا ستحصل عليه؟</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="feature-icon mb-2"><i class="bi bi-graph-up-arrow"></i></div>
+          <h5>تقارير فورية</h5>
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=80" alt="تقارير" class="img-fluid rounded mb-2" style="max-width:120px;" loading="lazy">
+          <p>احصل على تقارير مفصلة عن أداء حملاتك التسويقية لحظة بلحظة.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-icon mb-2"><i class="bi bi-robot"></i></div>
+          <h5>أتمتة الحملات</h5>
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=200&q=80" alt="أتمتة" class="img-fluid rounded mb-2" style="max-width:120px;" loading="lazy">
+          <p>شغّل حملاتك تلقائيًا وركز على تطوير أعمالك، ودع الذكاء الاصطناعي يعمل لأجلك.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-icon mb-2"><i class="bi bi-people"></i></div>
+          <h5>استهداف دقيق</h5>
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=200&q=80" alt="استهداف" class="img-fluid rounded mb-2" style="max-width:120px;" loading="lazy">
+          <p>حدد جمهورك المثالي بدقة وحقق أفضل عائد على الاستثمار.</p>
+        </div>
+      </div>
+    </div>
+    <!-- How it works Section -->
+    <div id="how" class="my-5">
+      <h2 class="text-center mb-4">كيف تبدأ؟</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="step-icon mb-2"><i class="bi bi-person-plus"></i></div>
+          <h6>١. أنشئ حسابك مجانًا</h6>
+          <p>سجّل بياناتك وابدأ فورًا بدون بطاقة ائتمان.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="step-icon mb-2"><i class="bi bi-bullseye"></i></div>
+          <h6>٢. اختر جمهورك</h6>
+          <p>حدد الفئة المستهدفة لحملتك التسويقية بسهولة.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="step-icon mb-2"><i class="bi bi-rocket-takeoff"></i></div>
+          <h6>٣. أطلق حملتك</h6>
+          <p>ابدأ حملتك وتابع النتائج مباشرة من لوحة التحكم.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="my-5">
+      <h2 class="text-center mb-4">آراء العملاء</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="card p-3 h-100">
+            <div class="card-body d-flex align-items-center">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="فاطمة" class="testimonial-img" loading="lazy">
+              <div>
+                <p class="card-text mb-1">"ماركتو غيّر طريقة تسويقنا بالكامل! النتائج كانت مذهلة والدعم سريع جدًا."</p>
+                <h6 class="card-title text-end">- فاطمة، متجر إلكتروني</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3 h-100">
+            <div class="card-body d-flex align-items-center">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="محمد" class="testimonial-img" loading="lazy">
+              <div>
+                <p class="card-text mb-1">"سهولة الاستخدام والتقارير المفصلة ساعدتنا على اتخاذ قرارات أفضل."</p>
+                <h6 class="card-title text-end">- محمد، شركة ناشئة</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ Section -->
+    <div id="faq" class="my-5">
+      <h2 class="text-center mb-4">الأسئلة الشائعة</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              هل أحتاج خبرة تقنية لاستخدام ماركتو؟
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              لا، ماركتو مصمم ليكون سهل الاستخدام لأي شخص حتى بدون خبرة تقنية.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              هل يوجد فترة تجريبية مجانية؟
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              نعم، يمكنك تجربة جميع ميزات ماركتو مجانًا لمدة ١٤ يومًا بدون أي التزام.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              كيف يمكنني التواصل مع الدعم الفني؟
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              يمكنك التواصل معنا عبر نموذج الاتصال في الأسفل أو عبر البريد الإلكتروني.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form -->
+    <div id="contact" class="my-5">
+      <h2 class="text-center mb-4">تواصل معنا</h2>
+      <form class="mx-auto" style="max-width:400px;" id="contactForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">الاسم</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">البريد الإلكتروني</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">رسالتك</label>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">أرسل الآن</button>
+      </form>
+      <div id="successMsg" class="alert alert-success mt-3 d-none">تم إرسال رسالتك بنجاح! سنعود إليك قريبًا.</div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2024 ماركتو. جميع الحقوق محفوظة.</p>
+      <small>هذا الموقع لأغراض العرض فقط. جميع المعلومات وهمية.</small>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // تفاعل نموذج الاتصال
+    document.getElementById('contactForm').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('successMsg').classList.remove('d-none');
+      this.reset();
+    }
+  </script>
+</body>
+</html> 
